@@ -18,6 +18,7 @@ import { Player } from './player.js'
 import { Enemy } from './enemy.js'
 import { createBullet, firePlayerBullet, fireEnemyBullet } from './bullets.js'
 import { myAlert } from './alert-txt.js'
+import './burger.js'
 
 const player = new Player()
 player.element = document.createElement('div') //хитбокс игрока (всё тело не включая шляпу)
