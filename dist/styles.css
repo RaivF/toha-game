@@ -1,0 +1,142 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: #2f2f2f;
+	display: flex;
+
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
+}
+.gamePole {
+	margin: 0 auto;
+	display: flex;
+}
+.menu {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.menu div {
+	background-color: #9cdc82;
+	cursor: pointer;
+	padding: 10px;
+	font-size: 2vh;
+	color: #ffffff;
+	margin: 10px;
+}
+#gameContainer {
+	position: relative;
+	width: 30vw;
+	height: 50vh;
+	background-color: gray;
+	display: flex;
+	justify-content: space-between;
+}
+
+.player {
+	position: absolute;
+	width: 30px;
+	height: 25px;
+}
+
+/* Зачем переменная --image-wizard? Она здесь не нужна, можно сразу поставить background-image*/
+.sprite {
+	width: 30px;
+	height: 50px;
+	background-repeat: no-repeat;
+	background-image: url(./img/wizard.png);
+	margin-bottom: 20px;
+	position: relative;
+	top: -25px;
+}
+.enemy {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+
+	background-image: url(./img/spider.png);
+}
+
+.bullet {
+	position: absolute;
+	width: 14px;
+	height: 14px;
+
+	background-image: url(./img/fireball.png);
+}
+
+.health-bar {
+	width: 100%;
+	height: 20px;
+
+	top: 10px;
+}
+
+#playerHealth {
+	background-color: green;
+}
+
+#enemyHealth {
+	background-color: #ff2600;
+}
+.h5 {
+	margin-top: 20px;
+}
+.enemy-bullet {
+	position: absolute;
+	width: 14px;
+	height: 14px;
+	background-color: purple;
+	background-image: url(./img/web.png);
+}
+.info {
+	font-size: 2vh;
+	color: #8fd8d2;
+	margin-right: 10px;
+}
+.sound-items {
+	position: relative;
+}
+#volumeControl {
+	width: 10vh;
+
+	position: absolute;
+	top: 28px;
+}
+.burger-menu-items {
+	min-width: 8vw;
+	display: flex;
+	flex-direction: column;
+}
+.sound {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 10px;
+	margin-left: 11px;
+}
+.alert {
+	position: absolute;
+	top: 15%;
+	left: 45%;
+
+	border: 2px solid white;
+	padding: 20px;
+}
+.sound span {
+	color: white;
+}
+
+.txt-pole {
+	font-size: 2vh;
+	color: #ffffff;
+}
+.hide {
+	background: transparent;
+}
+.none {
+	display: none;
+}
